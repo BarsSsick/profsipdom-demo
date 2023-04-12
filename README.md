@@ -1,1 +1,3 @@
-# profsipdom-demo
+---
+permalink: /index.html
+---
