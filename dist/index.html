@@ -1,14 +1,412 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+  <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.9.2/themes/smoothness/jquery-ui.css"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-    <div class="main">dsfdfhgdgh</div>
-    <script src="js/main.min.js"></script>
+  <header class="header">
+    <div class="container">
+      <nav class="header__menu navigation-menu js-nav-menu">
+        <div class="navigation-menu__toggle js-nav-menu-toggle">
+          <span class="navigation-menu__bars"></span>
+        </div>
+        <ul class="header__menu-list">
+          <li class="header__menu-item"><a class="header__menu-link"
+              href="https://barsssick.github.io/profsipdom-demo/app/index.html">Главная</a></li>
+          <li class="header__menu-item"><a class="header__menu-link"
+              href="https://barsssick.github.io/profsipdom-demo/app/projects.html">Проекты</a></li>
+          <li class="header__menu-item"><a class="header__menu-link"
+              href="https://barsssick.github.io/profsipdom-demo/app/services.html">Услуги</a></li>
+          <li class="header__menu-item"><a class="header__menu-link"
+              href="https://barsssick.github.io/profsipdom-demo/app/sip.html">Сип
+              панели</a></li>
+          <li class="header__menu-item"><a class="header__menu-link"
+              href="https://barsssick.github.io/profsipdom-demo/app/building.html">Как
+              строим</a></li>
+          <li class="header__menu-item"><a class="header__menu-link"
+              href="https://barsssick.github.io/profsipdom-demo/app/portfolio.html">Портфолио</a></li>
+          <li class="header__menu-item"><a class="header__menu-link"
+              href="https://barsssick.github.io/profsipdom-demo/app/about.html">О
+              нас</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="top">
+    <div class="container">
+      <div class="mobile__wrapper">
+        <a class="top__logo" href="#">
+          <img src="images/logoheader3.png" alt="">
+        </a>
+        <h1 class="top__title">
+          Дома из сип панелей под ключ, Лучшие цены и качество со всей Беларуси
+        </h1>
+        <div class="top__info">
+          <div class="top__contacts">
+            <a class="tel-icon" href="tel:375258438484">+375 (25) 843 84 84</a>
+            <a href="tel:375258438484">+375 (25) 843 84 84</a>
+          </div>
+          <div class="button-body">
+            <button data-fancybox data-src="#modal" href="javascript:;">Заказать звонок</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="top__wraper">
+
+        <a class="top__logo" href="#">
+          <img src="images/logoheader2.png" alt="">
+        </a>
+
+        <div class="top__inner">
+          <h1 class="top__title">
+            Дома из сип панелей под ключ, Лучшие цены и качество со всей Беларуси
+          </h1>
+        </div>
+        <div class="top__info">
+          <div class="top__contacts">
+            <a class="tel-icon" href="tel:375258438484">+375 (25) 843 84 84</a>
+            <a href="tel:375258438484">+375 (25) 843 84 84</a>
+          </div>
+
+          <div class="button-body">
+            <button data-fancybox data-src="#modal" href="javascript:;">Заказать звонок</button>
+          </div>
+        </div>
+
+
+        <i data-fancybox data-src="#modal" href="javascript:;" class="Phone is-animating">
+
+        </i>
+        <a href="#" class="scrollup">Наверх</a>
+      </div>
+      <div class="arrow-7">
+        <a href="#advantages">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="advantages" id="advantages">
+    <div class="container">
+      <div class="advantages__items">
+        <div class="advantages__item">
+          <div class="advantages__item-title">
+            Добро пожаловать на сайт profsipdom
+          </div>
+          <p class="advantages__item-text">
+            Выражаем Вам свою благодарность за проявленный интерес к нашей работе!
+            Сайт поможет Вам не только подробно ознакомиться с деятельностью и услугами
+            компании, но и оперативно связаться с менеджерами для максимально быстрого
+            удовлетворения своих потребностей.
+          </p>
+        </div>
+        <div class="advantages__item">
+          <div class="advantages__item-title">
+            Персоонал
+          </div>
+          <p class="advantages__item-text">
+            Заказывая услуги строительства домов в нашей компании, Вы можете
+            рассчитывать на высокое качество выполненных мероприятий. У нас работают
+            квалифицированные мастера, которые имеют многолетний стаж в строительной
+            индустрии. Они успешно справляются с заказами любой сложности. Дом,
+            построенный нами, будет в идеальном состоянии на протяжении долгих лет, не
+            нуждаясь в частом ремонте.
+          </p>
+        </div>
+        <div class="advantages__item">
+          <div class="advantages__item-title">
+            Выгодно
+          </div>
+          <p class="advantages__item-text">
+            Качественно, быстро и главное выгодно для вас строим жилые дома, дачи, бани и
+            беседки "под ключ" из каркаса и энергосберегающей технологии - СИП панели.
+            Плюсов такого строительства достаточно:
+            - быстровозводимые постройки;
+            - любая фасадная отделка;
+            - экономичность;
+            - надёжность;
+            - комфорт;
+            - экологичность.
+          </p>
+        </div>
+        <div class="advantages__item">
+          <div class="advantages__item-title">
+            Проекты
+          </div>
+          <p class="advantages__item-text">
+            Мы сформировали немалую базу готовых проектов, которая постоянно пополняется. Так же сотрудничаем с
+            проектными организациями, которые не только могут разработать оригинальный план под строительство, но и
+            сделать его по представленной вами фотографии, воплотив вашу мечту в реальность!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="activities">
+    <div class="container">
+      <div class="activities__title">
+        Наши виды деятельности
+      </div>
+      <div class="activities__inner">
+        <div class="activities__item" style="background-image: url(images/activities.jpg);">
+          <div class="activities__item-title">
+            Строительство частных домов из сип панелей
+          </div>
+        </div>
+        <div class="activities__item" style="background-image: url(images/activities2.jpg);">
+          <div class="activities__item-title">
+            Строительство бань, Гаражей и Беседок
+          </div>
+        </div>
+        <div class="activities__item" style="background-image: url(images/activities3.jpg);">
+          <div class="activities__item-title">
+            Строительство Магазинов, кафе и производственных обьектов
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="works">
+    <div class="container">
+      <div class="image-stack">
+        <a class="image-stack__item image-stack__item--1" href="images/works/work1.jpg" data-fancybox="images"
+          data-caption="My caption">
+          <img src="images/works/work1.jpg" alt="">
+        </a>
+        <a class="image-stack__item image-stack__item--2" href="images/works/work2.jpg" data-fancybox="images"
+          data-caption="My caption">
+          <img src="images/works/work2.jpg" alt="">
+        </a>
+        <a class="image-stack__item image-stack__item--3" href="images/works/work3.jpg" data-fancybox="images"
+          data-caption="My caption">
+          <img src="images/works/work3.jpg" alt="">
+        </a>
+        <a class="image-stack__item image-stack__item--4" href="images/works/work4.jpg" data-fancybox="images"
+          data-caption="My caption">
+          <img src="images/works/work4.jpg" alt="">
+        </a>
+        <a class="image-stack__item image-stack__item--5" href="images/works/work5.jpg" data-fancybox="images"
+          data-caption="My caption">
+          <img src="images/works/work5.jpg" alt="">
+        </a>
+        <a class="image-stack__item image-stack__item--6" href="images/works/work6.png" data-fancybox="images"
+          data-caption="My caption">
+          <img src="images/works/work6.png" alt="">
+        </a>
+        <a class="image-stack__item image-stack__item--7" href="images/works/work7.jpg" data-fancybox="images"
+          data-caption="My caption">
+          <img src="images/works/work7.jpg" alt="">
+        </a>
+        <a class="image-stack__item image-stack__item--8" href="images/works/work8.jpg" data-fancybox="images"
+          data-caption="My caption">
+          <img src="images/works/work8.jpg" alt="">
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- <section class="works">
+    <div class="works__items col">
+      <div class="works__item-big tile one"></div>
+      <div class="works__item-littles col">
+        <div class="works__item-little tile two"></div>
+        <div class="works__item-little tile three"></div>
+        <div class="works__item-little tile four"></div>
+        <div class="works__item-little tile five"></div>
+      </div>
+    </div>
+  </section> -->
+
+  <div class="wrapper">
+    <section id="maincode">
+      <h3 class="paralax-title">
+        За более 10 лет работы мы разработали оптимальное предложение согласно цены и качества.
+      </h3>
+    </section>
+  </div>
+
+  <section class="projects">
+    <div class="container-fluid">
+      <div class="projects__title">
+        Популярные проеты
+      </div>
+      <div class="projects__inner">
+        <!-- <div class="projects__inner-btn">
+          <div class="projects__inner-btnwrap"><button type="button" data-filter=".category-a">до 100 м2</button></div>
+          <div class="projects__inner-btnwrap"><button type="button" data-filter=".category-b">100 — 250 м2</button>
+          </div>
+          <div class="projects__inner-btnwrap"><button type="button" data-filter=".category-c">свыше 250 м2</button>
+          </div>
+          <div class="projects__inner-btnwrap"><button type="button" data-filter=".category-e">бани</button></div>
+          <div class="projects__inner-btnwrap"><button type="button" data-filter=".category-f">гостевые дома</button>
+          </div>
+          <div class="projects__inner-btnwrap"><button type="button" data-filter=".category-g">дачные и садовые
+              домики</button></div>
+          <div class="projects__inner-btnwrap"><button type="button" data-filter=".category-h">дуплексы</button></div>
+          <div class="projects__inner-btnwrap"><button type="button" data-filter=".category-n">модульные дома</button>
+          </div> -->
+        </div>
+        <div class="project__inner-box">
+          <div class="project__item mix category-b">
+            <a href="https://barsssick.github.io/profsipdom-demo/app/project-page110.html" class="project__item-img" style="background-image: url(images/project-page/p110/p110main.jpg);"></a>
+          </div>
+          <div class="project__item mix category-a">
+            <a href="https://barsssick.github.io/profsipdom-demo/app/project-page137.html" class="project__item-img" style="background-image: url(images/project-page/p137/p137main.jpg);"></a>
+          </div>
+          <div class="project__item mix category-d">
+            <a href="https://barsssick.github.io/profsipdom-demo/app/project-page142.html" class="project__item-img" style="background-image: url(images/project-page/p142/p142main.jpg);"></a>
+          </div>
+          <div class="project__item mix category-e">
+            <a href="https://barsssick.github.io/profsipdom-demo/app/project-page144.html" class="project__item-img" style="background-image: url(images/project-page/p144/p144main.jpg);"></a>
+          </div>
+          <div class="project__item mix category-f">
+            <a href="https://barsssick.github.io/profsipdom-demo/app/project-page15.html" class="project__item-img" style="background-image: url(images/project-page/p15/p15main.jpg);"></a>
+          </div>
+          <div class="project__item mix category-h">
+            <a href="https://barsssick.github.io/profsipdom-demo/app/project-page156.html" class="project__item-img" style="background-image: url(images/project-page/p156/p156main.jpg);"></a>
+          </div>
+          <div class="project__item mix category-g">
+            <a href="https://barsssick.github.io/profsipdom-demo/app/project-page161.html" class="project__item-img" style="background-image: url(images/project-page/p161/p161main.jpg);"></a>
+          </div>
+          <div class="project__item mix category-a">
+            <a href="https://barsssick.github.io/profsipdom-demo/app/project-page217.html" class="project__item-img" style="background-image: url(images/project-page/p217/p217main.jpg);"></a>
+          </div>
+          <div class="project__item mix category-a">
+            <a href="https://barsssick.github.io/profsipdom-demo/app/project-page23.html" class="project__item-img" style="background-image: url(images/project-page/p217/p217main.jpg);"></a>
+          </div>
+        </div>
+        <div class="button-body">
+          <button>Все проекты</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <div class="contact__title">
+        Остались вопросы?
+      </div>
+      <div class="contact__inner">
+        <div class="contact__form">
+          <div class="contact__form-title">
+            Здравствуйте задайте нам любой вопрос и в скором времени мы вам позвоним или напишем на почту.
+          </div>
+          <form>
+            <textarea placeholder="Ваш вопрос" required></textarea>
+            <input class="tel" type="number" type="tel" name="phone" size="40" minlength="18" aria-required="true"
+              aria-invalid="false" placeholder="+375 (__) ___ __ __" maxlength="18" required>
+            <input type="email" placeholder="e-mail">
+            <input class="input-file" type="file">
+            <div class="button-body">
+              <button type="submit">Задать вопрос</button>
+            </div>
+          </form>
+        </div>
+        <div class="contact__images">
+          <img src="images/specialist.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__info">
+          <a class="footer__info-logo" href="#">
+            <img src="images/logoheader3.png" alt="">
+          </a>
+          <div class="footer__info-text">
+            ЧТУП "Мастер 365"
+            УНП: 692022740
+            ОКПО: 501940966000
+            р/с: ВY72 IRJS 3012 0220 7010 0000 0933
+            в ОАО «СтатусБанк» ЦБУ №502
+          </div>
+        </div>
+        <div class="footer__menu">
+          <ul class="footer__menu-list">
+            <li><a href="#">Главаная</a></li>
+            <li><a href="#">Проекты</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Сип панели</a></li>
+            <li><a href="#">Как строим</a></li>
+            <li><a href="#">Портфолио</a></li>
+            <li><a href="#">О нас</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <div class="footer__contact-tel">
+            <a href="tel:375445554447">+375(44)555-444-7</a>
+            <a href="tel:375295554447">+375(29)555-444-7</a>
+          </div>
+
+          <div class="footer__contact-cocial">
+            <ul class="footer__contact-list">
+              <li><a class="instagram" href="#"><img src="images/icons/instagram.svg" alt=""></a></li>
+              <li><a class="facebook" href="#"><img src="images/icons/facebook.svg" alt=""></a></li>
+              <li><a class="odnoklasniki" href="#"><img src="images/icons/odnoklassniki.svg" alt=""></a></li>
+              <li><a class="twiter" href="#"><img src="images/icons/twitter.svg" alt=""></a></li>
+              <li><a class="telegram" href="#"><img src="images/icons/telegram.svg" alt=""></a></li>
+              <li><a class="vk" href="#"><img src="images/icons/vk.svg" alt=""></a></li>
+            </ul>
+          </div>
+          <div class="footer__contact-mail">
+            info@sipspremier.ru
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="modal">
+    <div class="tel__title">
+      Связатся с нами
+    </div>
+    <div class="tel__text">
+      Оставьте Ваш номер телефона и наши менеджеры свяжутся с вами в ближайшее время
+    </div>
+    <form>
+      <input class="tel" type="number" type="tel" name="phone" size="40" maxlength="4" aria-required="true"
+        aria-invalid="false" placeholder="+375 (__) ___ __ __" required>
+      <div class="input_label">
+        <label><span>Время</span><input placeholder="00:00" type="time"></label>
+        <label>
+          <span>Дата</span>
+          <input type="text" id="datepicker">
+          <input class="mobile-date" type="text">
+        </label>
+      </div>
+      <div class="button-body">
+        <button>Заказать звонок</button>
+      </div>
+    </form>
+  </div>
+
+
+  <script src="js/main.min.js"> </script>
 </body>
+
 </html>

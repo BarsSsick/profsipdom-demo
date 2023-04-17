@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+  <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.9.2/themes/smoothness/jquery-ui.css"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="header__menu navigation-menu js-nav-menu">
+        <div class="navigation-menu__toggle js-nav-menu-toggle">
+          <span class="navigation-menu__bars"></span>
+        </div>
+        <ul class="header__menu-list">
+          <li class="header__menu-item"><a class="header__menu-link"
+              href="https://barsssick.github.io/profsipdom-demo/app/index.html">Главная</a></li>
+          <li class="header__menu-item"><a class="header__menu-link"
+              href="https://barsssick.github.io/profsipdom-demo/app/projects.html">Проекты</a></li>
+          <li class="header__menu-item"><a class="header__menu-link"
+              href="https://barsssick.github.io/profsipdom-demo/app/services.html">Услуги</a></li>
+          <li class="header__menu-item"><a class="header__menu-link"
+              href="https://barsssick.github.io/profsipdom-demo/app/sip.html">Сип
+              панели</a></li>
+          <li class="header__menu-item"><a class="header__menu-link"
+              href="https://barsssick.github.io/profsipdom-demo/app/building.html">Как
+              строим</a></li>
+          <li class="header__menu-item"><a class="header__menu-link"
+              href="https://barsssick.github.io/profsipdom-demo/app/portfolio.html">Портфолио</a></li>
+          <li class="header__menu-item"><a class="header__menu-link"
+              href="https://barsssick.github.io/profsipdom-demo/app/about.html">О
+              нас</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="top top__building">
+    <div class="container">
+      <div class="container-btn">
+        <div class="top__inner">
+          <a class="top__logo" href="#">
+            <img src="images/logoheader3.png" alt="">
+          </a>
+          <h1 class="top__title">
+            Как строим
+          </h1>
+        </div>
+        <div class="top__info">
+          <div class="top__contacts">
+            <a class="tel-icon" href="tel:375258438484">+375 (25) 843 84 84</a>
+            <a href="tel:375258438484">+375 (25) 843 84 84</a>
+          </div>
+          <div class="button-body">
+            <button data-fancybox data-src="#modal" href="javascript:;" type="submit">Заказать звонок</button>
+          </div>
+        </div>
+        <div class="arrow-7">
+          <a href="#building">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <i data-fancybox data-src="#modal" href="javascript:;" class="Phone is-animating"></i>
+    <a href="#" class="scrollup">Наверх</a>
+  </section>
+
+
+  <section class="building" id="building">
+    <div class="container">
+      <h1 class="building__title title">
+        СИП технология
+      </h1>
+      <div class="all">
+        <input type="checkbox" name="all" id="all" />
+        <label for="all"></label>
+      </div> <!-- .all -->
+
+      <div class="accordion">
+        <div class="trigger">
+          <input type="checkbox" id="checkbox-1" name="checkbox-1" />
+          <label for="checkbox-1" class="checkbox">
+            Подготовительные работы <i></i>
+          </label>
+          <div class="content">
+            <ol>
+              <li>Подготовка ТЗ на проектирование с учетом ваших пожеланий;</li>
+              <li>Разработка и согласование эскизов планировки и фасадов дома;</li>
+              <li>Расчет стоимости материалов и работ по строительству;</li>
+              <li>Согласование общих сроков и поэтапного графика;</li>
+              <li>Заключение договора</li>
+              <li>Создаем условия для комфортной работы:</li>
+            </ol>
+            <ul>
+              <li class="list-mark">Обеспечим теплой бытовкой, спецодеждой, биотуалетом и электро-бензогенератором.</li>
+              <li class="list-mark">Привезенный материал складируется на строительной площадке и накрывается тентами.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="trigger">
+          <input type="checkbox" id="checkbox-2" name="checkbox-2" />
+          <label for="checkbox-2" class="checkbox">
+            Разведка участка<i></i>
+          </label>
+          <div class="content">
+            <ul>
+              <li>Привязка дома к месту застройки</li>
+              <li>Замер подъездных путей для транспорта</li>
+              <li>Определение места временного складирования материалов</li>
+              <li>Исследование грунта на участке с выездом специалиста</li>
+            </ul>
+          </div>
+        </div>
+        <div class="trigger">
+          <input type="checkbox" id="checkbox-3" name="checkbox-3" />
+          <label for="checkbox-3" class="checkbox">
+            Строительно-монтажные работы <i></i>
+          </label>
+          <div class="content">
+            <ul>
+              <li>Наружная инженерная подготовка</li>
+              <li>Возведение фундамента</li>
+              <li>Монтаж теплого контура дома, внутренних стен и перекрытий</li>
+              <li>Устройство и покрытие кровли</li>
+              <li>Установка оконных и дверных конструкции</li>
+              <li>Отделка фасада и цоколя</li>
+              <li>Устройство водосточной системы и отделка свесов</li>
+              <li>Монтаж внутренних инженерных сетей в соответствии заданным параметрам</li>
+              <li>Внутренняя отделка согласно техническому заданию</li>
+            </ul>
+          </div>
+        </div>
+        <div class="trigger">
+          <input type="checkbox" id="checkbox-4" name="checkbox-4" />
+          <label for="checkbox-4" class="checkbox">
+            Фундамент <i></i>
+          </label>
+          <div class="content">
+            <h3>Типы используемых фундаментов</h3>
+            <p>Чаще всего мы строим следующие:</p>
+            <ul>
+              <li><span>Винтовые сваи.</span> Самый популярный фундамент для СИП дома. Монтируется за один день в любое
+                время года. Сваи ввинчивают в грунт ниже уровня промерзания. Лопасть снижает нагрузку сваи на грунт,
+                препятствует ее выпиранию силами морозного пучения, тем самым обеспечивает ее неподвижность.
+                Срок службы – более 100 лет. Сваи можно демонтировать, а так же вкрутить дополнительные сваи и
+                монтировать пристройки к дому.</li>
+              <li><span>Малозаглублённый.</span> Это плавающий фундамент. Железобетонная лента с двумя-тремя поясами
+                армирования заглубляется в грунт на 10 см на подготовленное основание — утрамбованную песчаную подушку.
+                Собирается опалубка. В опалубку закладывается арматурный каркас, затем заливается бетон. 15 – 20 дней
+                раствор застывает, убирается опалубка и появляется возможность возводить стены.</li>
+              <li><span>Утеплённая шведская плита (УШП)</span> - этот тип фундамента целесообразно применять на слабых
+                грунтах. Бетон заливается на всю площадь строения, тем самым снижая давление дома на грунт. Образованная
+                монолитная плита служит основанием пола. Из за большого объема бетона и арматуры, нужных для проведения
+                работ, этот тип фундамента является дорогостоящим.</li>
+              <li><span>Буронабивные сваи</span> с высоким ростверком. Лучше строить такой фундамент на участках с
+                пучинистым грунтом, на склонах. Бурятся скважины, туда помещаются обсадные трубы, затем собирается
+                опалубка ростверка и арматурный каркас. Потом происходит бетонирование. Ростверк висит над поверхностью
+                земли на расстоянии 10-15 см, для
+                исключения давления на него грунта во время морозного пучения.</li>
+              <li><span>Фундамент ТИСЭ.</span> Фундамент состоящий из свай ТИСЭ стоит в 2 – 3 раза дешевле других
+                вариантов. Особенность этой конструкции заключается в форме сваи ТИСЭ: в нижней ее части имеется
+                полусферическое уширение. Такая форма сваи ТИСЭ способствует повышению несущей способности фундамента и
+                предотвращает выдавливание ее на пучинистых грунтах. Сваи ТИСЭ одинаково хорошо несут нагрузку от
+                тяжелых каменных и легких каркасных домов, не давая усадку.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="trigger">
+          <input type="checkbox" id="checkbox-5" name="checkbox-5" />
+          <label for="checkbox-5" class="checkbox">
+            Перекрытия <i></i>
+          </label>
+          <div class="content">
+            <p>Чаще всего нулевое и чердачное перекрытие мы изготавливаем из СИП панелей толщиной 224 мм. Возможен
+              вариант СИП 174 мм
+              Все детали СИП перекрытий поступают на объект в раскроенном по проекту виде. Это детали из СИП панелей,
+              стыковочный брус и торцевая доска.
+              Перекрытия опираются на обвязочный брус, что дает дополнительную прочность</p>
+            <h3>Перекрытия из СИП панелей</h3>
+            <p>Балки для перекрытий мы изготавливаем из массивного деревянного бруса камерной сушки).
+              Все детали перекрытия поступают на объект уже в раскроенном по проекту виде. Бригаде монтажников нужно
+              аккуратно всё собрать в соответствии с чертежами.
+              Сечение балок и их шаг в перекрытии определяем расчетом по СНиП с учетом веса перекрытия и
+              эксплуатационной нагрузки.
+              Часто вместо деревянных массивных балок мы используем двутавровые балки с деревянными полками и стенкой из
+              OSB-3:
+              Обычно для устройства межэтажных перекрытий мы используем балки БДКУ (балки двутавровые конструкционные
+              усиленные) с высотой сечения 302 мм.
+
+              Сверху на балки межэтажного перекрытия мы настилаем черновой пол - основание для чистового напольного
+              покрытия (ламинат, паркет, линолеум, ковролин и др.). В качестве материала для чернового мы используем
+              экологически чистые плиты OSB-3 толщиной 22 мм :</p>
+          </div>
+        </div>
+        <div class="trigger">
+          <input type="checkbox" id="checkbox-6" name="checkbox-6" />
+          <label for="checkbox-6" class="checkbox">
+            Стены<i></i>
+          </label>
+          <div class="content">
+            <h3>Выделяют:</h3>
+            <ul>
+              <li>Наружные стены ( тёплые, защищают от холода);</li>
+              <li>Несущие стены (прочные, так как несут нагрузку от веса дома);</li>
+              <li>Перегородки (межкомнатные внутренние стены, так же несут нагрузку).
+                <p>Если стены СИП дома возводят на перекрытии (платформе), то высота потолков будущих помещений будет
+                  равна длине стеновых СИП панелей. Для стен первого этажа чаще используют СИП панели длиной 2,8 м
+                  (евроразмер), а для второго - 2,5 м.
+
+                  При платформенной сборке первая операция монтажа стен - это установка на перекрытие нижней обвязки СИП
+                  стен. Обвязка – это направляющая для стен доска соответствующей ширины, на которую нанизываются
+                  стеновые СИП панели.
+
+                  Для стен из СИП толщиной 174 мм мы используем доску 150х50 мм. Для стен из СИП 224 мм и 124 мм - доску
+                  200х50 мм и 100х50 мм соответственно. В доме из СИП наружные стены собирают только из СИП панелей.
+                  Толщина наружных стен 174 мм - общепринятый стандарт. Стык стеновых СИП панелей выполняем по схеме
+                  шип-паз на стойке из бруса.</p>
+              </li>
+              <li>Несущие стены и перегородки
+                <p>Несущие внутренние стены и межкомнатные перегородки можно выполнить каркасными, но в большинстве
+                  случаев заказывают из СИП панелей.
+
+                  Чаще всего перегородки делаем из СИП панелей толщиной 124 мм. Беспрерывный тепловой контур
+                  обеспечивает отсутствие возможного сквозного продувания, усиленное крепление «теплого угла» дает не
+                  только гарантированную защиту от продуваний, но и обеспечивает надежное соединение смежных стен.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="trigger">
+          <input type="checkbox" id="checkbox-7" name="checkbox-7" />
+          <label for="checkbox-7" class="checkbox">
+            Крыша <i></i>
+          </label>
+          <div class="content">
+            <p>
+              Конструкция крыши представляет собой стропильную систему. Стропила делаются из доски 50Х150 естественной
+              влажности. Можно использовать для устройства мансардных этажей утепленные минеральными плитами
+              классические
+              стропильные крыши.
+            </p>
+          </div>
+        </div>
+        <div class="trigger">
+          <input type="checkbox" id="checkbox-8" name="checkbox-8" />
+          <label for="checkbox-8" class="checkbox">
+            Кровля <i></i>
+          </label>
+          <div class="content">
+            <p> Монтаж кровли из металлочерепицы и мягкой кровли.</p>
+          </div>
+        </div>
+        <div class="trigger">
+          <input type="checkbox" id="checkbox-9" name="checkbox-9" />
+          <label for="checkbox-9" class="checkbox">
+            Окна и двери <i></i>
+          </label>
+          <div class="content">
+            <p>
+            <h3>Окна</h3>
+            <p>
+              На большинстве объектов мы устанавливаем окна и двери в соответствии с ГОСТом:
+            </p>
+            <ul>
+              <li class="list-mark">пароизолируем;</li>
+              <li class="list-mark">гидроизолируем;</li>
+              <li class="list-mark">уплотняем монтажный стык окна и стены специальными лентами.</li>
+            </ul>
+            <h3>Двери</h3>
+            <p>
+              Устанавливаем входные двери по выбору заказчика. Чаще всего это металлические двери. Двери со
+              стеклопакетами устанавливаем при выходе на террасу, но также эти моменты обсуждаем с заказчиком.
+            </p>
+          </div>
+        </div>
+
+        <div class="trigger">
+          <input type="checkbox" id="checkbox-10" name="checkbox-10" />
+          <label for="checkbox-10" class="checkbox">
+            Сдача готового проекта <i></i>
+          </label>
+          <div class="content">
+            <ul>
+              <li>Осмотр и проверка инженером</li>
+              <li>Генеральная уборка и вывоз строительных отходов (оплачивается отдельно)</li>
+              <li>Подписание актов приема-передачи</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <div class="contact__title">
+        Остались вопросы?
+      </div>
+      <div class="contact__inner">
+        <div class="contact__form">
+          <div class="contact__form-title">
+            Здравствуйте задайте нам любой вопрос и в скором времени мы вам позвоним или напишем на почту.
+          </div>
+          <form>
+            <textarea placeholder="Ваш вопрос" required></textarea>
+            <input class="tel" type="number" type="tel" name="phone" size="40" minlength="18" aria-required="true"
+              aria-invalid="false" placeholder="+375 (__) ___ __ __" maxlength="18" required>
+            <input type="email" placeholder="e-mail">
+            <input class="input-file" type="file">
+            <div class="button-body">
+              <button type="submit">Задать вопрос</button>
+            </div>
+          </form>
+        </div>
+        <div class="contact__images">
+          <img src="images/specialist.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__info">
+          <a class="footer__info-logo" href="#">
+            <img src="images/logoheader3.png" alt="">
+          </a>
+          <div class="footer__info-text">
+            ЧТУП "Мастер 365"
+            УНП: 692022740
+            ОКПО: 501940966000
+            р/с: ВY72 IRJS 3012 0220 7010 0000 0933
+            в ОАО «СтатусБанк» ЦБУ №502
+          </div>
+        </div>
+        <div class="footer__menu">
+          <ul class="footer__menu-list">
+            <li><a href="#">Главаная</a></li>
+            <li><a href="#">Проекты</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Сип панели</a></li>
+            <li><a href="#">Как строим</a></li>
+            <li><a href="#">Портфолио</a></li>
+            <li><a href="#">О нас</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <div class="footer__contact-tel">
+            <a href="tel:375445554447">+375(44)555-444-7</a>
+            <a href="tel:375295554447">+375(29)555-444-7</a>
+          </div>
+
+          <div class="footer__contact-cocial">
+            <ul class="footer__contact-list">
+              <li><a class="instagram" href="#"><img src="images/icons/instagram.svg" alt=""></a></li>
+              <li><a class="facebook" href="#"><img src="images/icons/facebook.svg" alt=""></a></li>
+              <li><a class="odnoklasniki" href="#"><img src="images/icons/odnoklassniki.svg" alt=""></a></li>
+              <li><a class="twiter" href="#"><img src="images/icons/twitter.svg" alt=""></a></li>
+              <li><a class="telegram" href="#"><img src="images/icons/telegram.svg" alt=""></a></li>
+              <li><a class="vk" href="#"><img src="images/icons/vk.svg" alt=""></a></li>
+            </ul>
+          </div>
+          <div class="footer__contact-mail">
+            info@sipspremier.ru
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div id="modal">
+    <div class="tel__title">
+      Связатся с нами
+    </div>
+    <div class="tel__text">
+      Оставьте Ваш номер телефона и наши менеджеры свяжутся с вами в ближайшее время
+    </div>
+    <form>
+      <input class="tel" type="number" type="tel" name="phone" size="40" maxlength="4" aria-required="true"
+        aria-invalid="false" placeholder="+375 (__) ___ __ __" required>
+      <div class="input_label">
+        <label><span>Время</span><input placeholder="00:00" type="time"></label>
+        <label>
+          <span>Дата</span>
+          <input type="text" id="datepicker">
+          <input class="mobile-date" type="text">
+        </label>
+      </div>
+      <div class="button-body">
+        <button ">Заказать звонок</button>
+      </div>
+    </form>
+  </div>
+
+  <script src=" js/main.min.js"></script>
+</body>
+
+</html>

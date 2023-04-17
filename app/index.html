@@ -9,10 +9,20 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
   <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.9.2/themes/smoothness/jquery-ui.css"> 
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.9.2/themes/smoothness/jquery-ui.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  
+
+  <link rel="stylesheet" href="https://amsul.ca/pickadate.js/css/main.css">
+  <link rel="stylesheet" href="https://amsul.ca/pickadate.js/vendor/pickadate/lib/themes/default.css" id="theme_base">
+  <link rel="stylesheet" href="https://amsul.ca/pickadate.js/vendor/pickadate/lib/themes/default.date.css"
+    id="theme_date">
+  <link rel="stylesheet" href="https://amsul.ca/pickadate.js/vendor/pickadate/lib/themes/default.time.css"
+    id="theme_time">
+  <script src="https://amsul.ca/pickadate.js/vendor/pickadate/lib/picker.js"></script>
+  <script src="https://amsul.ca/pickadate.js/vendor/pickadate/lib/picker.date.js"></script>
+  <script src="https://amsul.ca/pickadate.js/vendor/pickadate/lib/picker.time.js"></script>
+
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -266,40 +276,49 @@
           <div class="projects__inner-btnwrap"><button type="button" data-filter=".category-h">дуплексы</button></div>
           <div class="projects__inner-btnwrap"><button type="button" data-filter=".category-n">модульные дома</button>
           </div> -->
+      </div>
+      <div class="project__inner-box">
+        <div class="project__item mix category-b">
+          <a href="https://barsssick.github.io/profsipdom-demo/app/project-page110.html" class="project__item-img"
+            style="background-image: url(images/project-page/p110/p110main.jpg);"></a>
         </div>
-        <div class="project__inner-box">
-          <div class="project__item mix category-b">
-            <a href="https://barsssick.github.io/profsipdom-demo/app/project-page110.html" class="project__item-img" style="background-image: url(images/project-page/p110/p110main.jpg);"></a>
-          </div>
-          <div class="project__item mix category-a">
-            <a href="https://barsssick.github.io/profsipdom-demo/app/project-page137.html" class="project__item-img" style="background-image: url(images/project-page/p137/p137main.jpg);"></a>
-          </div>
-          <div class="project__item mix category-d">
-            <a href="https://barsssick.github.io/profsipdom-demo/app/project-page142.html" class="project__item-img" style="background-image: url(images/project-page/p142/p142main.jpg);"></a>
-          </div>
-          <div class="project__item mix category-e">
-            <a href="https://barsssick.github.io/profsipdom-demo/app/project-page144.html" class="project__item-img" style="background-image: url(images/project-page/p144/p144main.jpg);"></a>
-          </div>
-          <div class="project__item mix category-f">
-            <a href="https://barsssick.github.io/profsipdom-demo/app/project-page15.html" class="project__item-img" style="background-image: url(images/project-page/p15/p15main.jpg);"></a>
-          </div>
-          <div class="project__item mix category-h">
-            <a href="https://barsssick.github.io/profsipdom-demo/app/project-page156.html" class="project__item-img" style="background-image: url(images/project-page/p156/p156main.jpg);"></a>
-          </div>
-          <div class="project__item mix category-g">
-            <a href="https://barsssick.github.io/profsipdom-demo/app/project-page161.html" class="project__item-img" style="background-image: url(images/project-page/p161/p161main.jpg);"></a>
-          </div>
-          <div class="project__item mix category-a">
-            <a href="https://barsssick.github.io/profsipdom-demo/app/project-page217.html" class="project__item-img" style="background-image: url(images/project-page/p217/p217main.jpg);"></a>
-          </div>
-          <div class="project__item mix category-a">
-            <a href="https://barsssick.github.io/profsipdom-demo/app/project-page23.html" class="project__item-img" style="background-image: url(images/project-page/p217/p217main.jpg);"></a>
-          </div>
+        <div class="project__item mix category-a">
+          <a href="https://barsssick.github.io/profsipdom-demo/app/project-page137.html" class="project__item-img"
+            style="background-image: url(images/project-page/p137/p137main.jpg);"></a>
         </div>
-        <div class="button-body">
-          <button>Все проекты</button>
+        <div class="project__item mix category-d">
+          <a href="https://barsssick.github.io/profsipdom-demo/app/project-page142.html" class="project__item-img"
+            style="background-image: url(images/project-page/p142/p142main.jpg);"></a>
+        </div>
+        <div class="project__item mix category-e">
+          <a href="https://barsssick.github.io/profsipdom-demo/app/project-page144.html" class="project__item-img"
+            style="background-image: url(images/project-page/p144/p144main.jpg);"></a>
+        </div>
+        <div class="project__item mix category-f">
+          <a href="https://barsssick.github.io/profsipdom-demo/app/project-page15.html" class="project__item-img"
+            style="background-image: url(images/project-page/p15/p15main.jpg);"></a>
+        </div>
+        <div class="project__item mix category-h">
+          <a href="https://barsssick.github.io/profsipdom-demo/app/project-page156.html" class="project__item-img"
+            style="background-image: url(images/project-page/p156/p156main.jpg);"></a>
+        </div>
+        <div class="project__item mix category-g">
+          <a href="https://barsssick.github.io/profsipdom-demo/app/project-page161.html" class="project__item-img"
+            style="background-image: url(images/project-page/p161/p161main.jpg);"></a>
+        </div>
+        <div class="project__item mix category-a">
+          <a href="https://barsssick.github.io/profsipdom-demo/app/project-page217.html" class="project__item-img"
+            style="background-image: url(images/project-page/p217/p217main.jpg);"></a>
+        </div>
+        <div class="project__item mix category-a">
+          <a href="https://barsssick.github.io/profsipdom-demo/app/project-page23.html" class="project__item-img"
+            style="background-image: url(images/project-page/p217/p217main.jpg);"></a>
         </div>
       </div>
+      <div class="button-body">
+        <button>Все проекты</button>
+      </div>
+    </div>
     </div>
   </section>
 
@@ -389,16 +408,13 @@
       Оставьте Ваш номер телефона и наши менеджеры свяжутся с вами в ближайшее время
     </div>
     <form>
+      <div class="tel">Телефон</div>
       <input class="tel" type="number" type="tel" name="phone" size="40" maxlength="4" aria-required="true"
         aria-invalid="false" placeholder="+375 (__) ___ __ __" required>
-      <div class="input_label">
-        <label><span>Время</span><input placeholder="00:00" type="time"></label>
-        <label>
-          <span>Дата</span>
-          <input type="text" id="datepicker">
-          <input class="mobile-date" type="text">
-        </label>
-      </div>
+      <div class="tel">Дата</div>
+      <input type="text" value="" id="pickadate" class="pickadate" />
+      <div class="tel">Время</div>
+      <input type="text" value="" id="pickatime" class="pickatime" />
       <div class="button-body">
         <button>Заказать звонок</button>
       </div>
@@ -406,7 +422,7 @@
   </div>
 
 
-  <script src=" js/main.min.js"> </script>
+  <script src="js/main.min.js"> </script>
 </body>
 
 </html>

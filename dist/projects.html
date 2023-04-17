@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+  <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.9.2/themes/smoothness/jquery-ui.css"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="header__menu navigation-menu js-nav-menu">
+        <div class="navigation-menu__toggle js-nav-menu-toggle">
+          <span class="navigation-menu__bars"></span>
+        </div>
+        <ul class="header__menu-list">
+          <li class="header__menu-item"><a class="header__menu-link"
+              href="https://barsssick.github.io/profsipdom-demo/app/index.html">Главная</a></li>
+          <li class="header__menu-item"><a class="header__menu-link"
+              href="https://barsssick.github.io/profsipdom-demo/app/projects.html">Проекты</a></li>
+          <li class="header__menu-item"><a class="header__menu-link"
+              href="https://barsssick.github.io/profsipdom-demo/app/services.html">Услуги</a></li>
+          <li class="header__menu-item"><a class="header__menu-link"
+              href="https://barsssick.github.io/profsipdom-demo/app/sip.html">Сип
+              панели</a></li>
+          <li class="header__menu-item"><a class="header__menu-link"
+              href="https://barsssick.github.io/profsipdom-demo/app/building.html">Как
+              строим</a></li>
+          <li class="header__menu-item"><a class="header__menu-link"
+              href="https://barsssick.github.io/profsipdom-demo/app/portfolio.html">Портфолио</a></li>
+          <li class="header__menu-item"><a class="header__menu-link"
+              href="https://barsssick.github.io/profsipdom-demo/app/about.html">О
+              нас</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="top top__projects">
+    <div class="container">
+      <div class="container-btn">
+        <div class="top__inner">
+          <a class="top__logo" href="#">
+            <img src="images/logoheader3.png" alt="">
+          </a>
+          <h1 class="top__title">
+            Проекты
+          </h1>
+        </div>
+        <div class="top__info">
+          <div class="top__contacts">
+            <a class="tel-icon" href="tel:375258438484">+375 (25) 843 84 84</a>
+            <a href="tel:375258438484">+375 (25) 843 84 84</a>
+          </div>
+          <div class="button-body">
+            <button data-fancybox data-src="#modal" href="javascript:;" type="submit">Заказать звонок</button>
+          </div>
+        </div>
+        <div class="arrow-7">
+          <a href="#projects">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <i data-fancybox data-src="#modal" href="javascript:;" class="Phone is-animating"></i>
+    <a href="#" class="scrollup">Наверх</a>
+  </section>
+
+
+
+  <section class="projects" id="projects">
+
+    <div class="container">
+      <div class="projects__items">
+        <input type="radio" id="p100" name="color" />
+        <label for="p100">до 100м2</label>
+        <input type="radio" id="p100-150" name="color" />
+        <label for="p100-150">100-150м2</label>
+        <input type="radio" id="p250" name="color" />
+        <label for="p250">больше 150м2</label>
+        <input type="radio" id="reset" name="color" />
+        <label for="reset">все</label>
+        <div class="projects__item p100-150">
+          <div class="project__item-info">
+            <h3 class="project__item-title">
+              p110
+            </h3>
+            <div class="project__item-text">
+              от 70 000 BYN
+            </div>
+            <div class="project__item-area">
+              115,55 м2
+            </div>
+            <div class="button-body">
+              <a href="https://barsssick.github.io/profsipdom-demo/app/project-page110.html">
+              <button  type="submit">Подробнее</button>
+              </a>
+            </div>
+          </div>
+          <div class="project__item-box project__item-bg"></div>
+        </div>
+        <div class="projects__item p100-150">
+          <div class="project__item-info">
+            <h3 class="project__item-title">
+              p137
+            </h3>
+            <div class="project__item-text">
+              от 82 000 BYN
+            </div>
+            <div class="project__item-area">
+              137 м2
+            </div>
+            <div class="button-body">
+              <a href="https://barsssick.github.io/profsipdom-demo/app/project-page137.html">
+                <button  type="submit">Подробнее</button>
+                </a>
+            </div>
+          </div>
+          <div class="project__item-box project__item-bg2"></div>
+        </div>
+        <div class="projects__item p100">
+          <div class="project__item-info">
+            <h3 class="project__item-title">
+              p142
+            </h3>
+            <div class="project__item-text">
+              от 50 000 BYN
+            </div>
+            <div class="project__item-area">
+              81,53 м2
+            </div>
+            <div class="button-body">
+              <a href="https://barsssick.github.io/profsipdom-demo/app/project-page142.html">
+                <button  type="submit">Подробнее</button>
+                </a>
+            </div>
+          </div>
+          <div class="project__item-box project__item-bg3"></div>
+        </div>
+        <div class="projects__item p100-150">
+          <div class="project__item-info">
+            <h3 class="project__item-title">
+              p144
+            </h3>
+            <div class="project__item-text">
+              от 60 000 BYN
+            </div>
+            <div class="project__item-area">
+              101,20 м2
+            </div>
+            <div class="button-body">
+              <a href="https://barsssick.github.io/profsipdom-demo/app/project-page144.html">
+                <button  type="submit">Подробнее</button>
+                </a>
+            </div>
+          </div>
+          <div class="project__item-box project__item-bg4"></div>
+        </div>
+        <div class="projects__item p100">
+          <div class="project__item-info">
+            <h3 class="project__item-title">
+              p15
+            </h3>
+            <div class="project__item-text">
+              от 50 000 BYN
+            </div>
+            <div class="project__item-area">
+              83,32 м2
+            </div>
+            <div class="button-body">
+              <a href="https://barsssick.github.io/profsipdom-demo/app/project-page15.html">
+                <button  type="submit">Подробнее</button>
+                </a>
+            </div>
+          </div>
+          <div class="project__item-box project__item-bg5"></div>
+        </div>
+        <div class="projects__item p100">
+          <div class="project__item-info">
+            <h3 class="project__item-title">
+              p156
+            </h3>
+            <div class="project__item-text">
+              от 55 000 BYN
+            </div>
+            <div class="project__item-area">
+              90,93 м2
+            </div>
+            <div class="button-body">
+              <a href="https://barsssick.github.io/profsipdom-demo/app/project-page156.html">
+                <button  type="submit">Подробнее</button>
+                </a>
+            </div>
+          </div>
+          <div class="project__item-box project__item-bg6"></div>
+        </div>
+        <div class="projects__item p100-150">
+          <div class="project__item-info">
+            <h3 class="project__item-title">
+              p161
+            </h3>
+            <div class="project__item-text">
+              от 81 000 BYN
+            </div>
+            <div class="project__item-area">
+              135,34 м2
+            </div>
+            <div class="button-body">
+              <a href="https://barsssick.github.io/profsipdom-demo/app/project-page161.html">
+                <button  type="submit">Подробнее</button>
+                </a>
+            </div>
+          </div>
+          <div class="project__item-box project__item-bg7"></div>
+        </div>
+        <div class="projects__item p100">
+          <div class="project__item-info">
+            <h3 class="project__item-title">
+              p217
+            </h3>
+            <div class="project__item-text">
+              от 56 000 BYN
+            </div>
+            <div class="project__item-area">
+              93,10 м2
+            </div>
+            <div class="button-body">
+              <a href="https://barsssick.github.io/profsipdom-demo/app/project-page217.html">
+                <button  type="submit">Подробнее</button>
+                </a>
+            </div>
+          </div>
+          <div class="project__item-box project__item-bg8"></div>
+        </div>
+        <div class="projects__item p100-150">
+          <div class="project__item-info">
+            <h3 class="project__item-title">
+              p23
+            </h3>
+            <div class="project__item-text">
+              80 000 BYN
+            </div>
+            <div class="project__item-area">
+              132,67 м2
+            </div>
+            <div class="button-body">
+              <a href="https://barsssick.github.io/profsipdom-demo/app/project-page23.html">
+                <button  type="submit">Подробнее</button>
+                </a>
+            </div>
+          </div>
+          <div class="project__item-box project__item-bg9"></div>
+        </div>
+        <div class="projects__item p100-150">
+          <div class="project__item-info">
+            <h3 class="project__item-title">
+              p236
+            </h3>
+            <div class="project__item-text">
+              от 74 000 BYN
+            </div>
+            <div class="project__item-area">
+              123,59 м2
+            </div>
+            <div class="button-body">
+              <a href="https://barsssick.github.io/profsipdom-demo/app/project-page236.html">
+                <button  type="submit">Подробнее</button>
+                </a>
+            </div>
+          </div>
+          <div class="project__item-box project__item-bg10"></div>
+        </div>
+        <div class="projects__item p100-150">
+          <div class="project__item-info">
+            <h3 class="project__item-title">
+              p250
+            </h3>
+            <div class="project__item-text">
+              от 81 000 BYN
+            </div>
+            <div class="project__item-area">
+              135,63 м2
+            </div>
+            <div class="button-body">
+              <a href="https://barsssick.github.io/profsipdom-demo/app/project-page250.html">
+                <button  type="submit">Подробнее</button>
+                </a>
+            </div>
+          </div>
+          <div class="project__item-box project__item-bg11"></div>
+        </div>
+        <div class="projects__item p100-150">
+          <div class="project__item-info">
+            <h3 class="project__item-title">
+              p272
+            </h3>
+            <div class="project__item-text">
+              от 73 000 BYN
+            </div>
+            <div class="project__item-area">
+              122,44 м2
+            </div>
+            <div class="button-body">
+              <a href="https://barsssick.github.io/profsipdom-demo/app/project-page272.html">
+                <button  type="submit">Подробнее</button>
+                </a>
+            </div>
+          </div>
+          <div class="project__item-box project__item-bg12"></div>
+        </div>
+        <div class="projects__item p100">
+          <div class="project__item-info">
+            <h3 class="project__item-title">
+              p39
+            </h3>
+            <div class="project__item-text">
+              от 52 500 BYN
+            </div>
+            <div class="project__item-area">
+              87,45 м2
+            </div>
+            <div class="button-body">
+              <a href="https://barsssick.github.io/profsipdom-demo/app/project-page39.html">
+                <button  type="submit">Подробнее</button>
+                </a>
+            </div>
+          </div>
+          <div class="project__item-box project__item-bg13"></div>
+        </div>
+        <div class="projects__item p100-150">
+          <div class="project__item-info">
+            <h3 class="project__item-title">
+              p48
+            </h3>
+            <div class="project__item-text">
+              от 64 000 BYN
+            </div>
+            <div class="project__item-area">
+              106,4 м2
+            </div>
+            <div class="button-body">
+              <a href="https://barsssick.github.io/profsipdom-demo/app/project-page48.html">
+                <button  type="submit">Подробнее</button>
+                </a>
+            </div>
+          </div>
+          <div class="project__item-box project__item-bg14"></div>
+        </div>
+        <div class="projects__item p100">
+          <div class="project__item-info">
+            <h3 class="project__item-title">
+              p61
+            </h3>
+            <div class="project__item-text">
+              от 60 000 BYN
+            </div>
+            <div class="project__item-area">
+              99,12 м2
+            </div>
+            <div class="button-body">
+              <a href="https://barsssick.github.io/profsipdom-demo/app/project-page61.html">
+                <button  type="submit">Подробнее</button>
+                </a>
+            </div>
+          </div>
+          <div class="project__item-box project__item-bg15"></div>
+        </div>
+        <div class="projects__item p100">
+          <div class="project__item-info">
+            <h3 class="project__item-title">
+              p64
+            </h3>
+            <div class="project__item-text">
+              от 275500 руб.
+            </div>
+            <div class="project__item-area">
+              240 м2
+            </div>
+            <div class="button-body">
+              <a href="https://barsssick.github.io/profsipdom-demo/app/project-page64.html">
+                <button  type="submit">Подробнее</button>
+                </a>
+            </div>
+          </div>
+          <div class="project__item-box project__item-bg16"></div>
+        </div>
+        <div class="projects__item p100">
+          <div class="project__item-info">
+            <h3 class="project__item-title">
+              p73
+            </h3>
+            <div class="project__item-text">
+              от 50 000 BYN
+            </div>
+            <div class="project__item-area">
+              83,32 м2
+            </div>
+            <div class="button-body">
+              <a href="https://barsssick.github.io/profsipdom-demo/app/project-page73.html">
+                <button  type="submit">Подробнее</button>
+                </a>
+            </div>
+          </div>
+          <div class="project__item-box project__item-bg17"></div>
+        </div>
+        <div class="projects__item p100-150">
+          <div class="project__item-info">
+            <h3 class="project__item-title">
+              p82
+            </h3>
+            <div class="project__item-text">
+              от 60 000 BYN
+            </div>
+            <div class="project__item-area">
+              100,18 м2
+            </div>
+            <div class="button-body">
+              <a href="https://barsssick.github.io/profsipdom-demo/app/project-page82.html">
+                <button  type="submit">Подробнее</button>
+                </a>
+            </div>
+          </div>
+          <div class="project__item-box project__item-bg18"></div>
+        </div>
+        <div class="projects__item p100">
+          <div class="project__item-info">
+            <h3 class="project__item-title">
+              p98
+            </h3>
+            <div class="project__item-text">
+              от 55 000 BYN
+            </div>
+            <div class="project__item-area">
+              91,62 м2
+            </div>
+            <div class="button-body">
+              <a href="https://barsssick.github.io/profsipdom-demo/app/project-page98.html">
+                <button  type="submit">Подробнее</button>
+                </a>
+            </div>
+          </div>
+          <div class="project__item-box project__item-bg19"></div>
+        </div>
+        <div class="projects__item p100-150">
+          <div class="project__item-info">
+            <h3 class="project__item-title">
+              p99
+            </h3>
+            <div class="project__item-text">
+              от 86 000 BYN
+            </div>
+            <div class="project__item-area">
+              144 м2
+            </div>
+            <div class="button-body">
+              <a href="https://barsssick.github.io/profsipdom-demo/app/project-page99.html">
+                <button  type="submit">Подробнее</button>
+                </a>
+            </div>
+          </div>
+          <div class="project__item-box project__item-bg20"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__info">
+          <a class="footer__info-logo" href="#">
+            <img src="images/logoheader3.png" alt="">
+          </a>
+          <div class="footer__info-text">
+            ЧТУП "Мастер 365"
+            УНП: 692022740
+            ОКПО: 501940966000
+            р/с: ВY72 IRJS 3012 0220 7010 0000 0933
+            в ОАО «СтатусБанк» ЦБУ №502
+          </div>
+        </div>
+        <div class="footer__menu">
+          <ul class="footer__menu-list">
+            <li><a href="#">Главаная</a></li>
+            <li><a href="#">Проекты</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Сип панели</a></li>
+            <li><a href="#">Как строим</a></li>
+            <li><a href="#">Портфолио</a></li>
+            <li><a href="#">О нас</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <div class="footer__contact-tel">
+            <a href="tel:375445554447">+375(44)555-444-7</a>
+            <a href="tel:375295554447">+375(29)555-444-7</a>
+          </div>
+
+          <div class="footer__contact-cocial">
+            <ul class="footer__contact-list">
+              <li><a class="instagram" href="#"><img src="images/icons/instagram.svg" alt=""></a></li>
+              <li><a class="facebook" href="#"><img src="images/icons/facebook.svg" alt=""></a></li>
+              <li><a class="odnoklasniki" href="#"><img src="images/icons/odnoklassniki.svg" alt=""></a></li>
+              <li><a class="twiter" href="#"><img src="images/icons/twitter.svg" alt=""></a></li>
+              <li><a class="telegram" href="#"><img src="images/icons/telegram.svg" alt=""></a></li>
+              <li><a class="vk" href="#"><img src="images/icons/vk.svg" alt=""></a></li>
+            </ul>
+          </div>
+          <div class="footer__contact-mail">
+            info@sipspremier.ru
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div id="modal">
+    <div class="tel__title">
+      Связатся с нами
+    </div>
+    <div class="tel__text">
+      Оставьте Ваш номер телефона и наши менеджеры свяжутся с вами в ближайшее время
+    </div>
+    <form>
+      <input class="tel" type="number" type="tel" name="phone" size="40" maxlength="4" aria-required="true"
+        aria-invalid="false" placeholder="+375 (__) ___ __ __" required>
+      <div class="input_label">
+        <label><span>Время</span><input placeholder="00:00" type="time"></label>
+        <label>
+          <span>Дата</span>
+          <input type="text" id="datepicker">
+          <input class="mobile-date" type="text">
+        </label>
+      </div>
+      <div class="button-body">
+        <button ">Заказать звонок</button>
+      </div>
+    </form>
+  </div>
+
+  <script src=" js/main.min.js"> </script>
+</body>
+
+</html>
