@@ -365,18 +365,15 @@
       Оставьте Ваш номер телефона и наши менеджеры свяжутся с вами в ближайшее время
     </div>
     <form>
+      <div class="tel">Телефон</div>
       <input class="tel" type="number" type="tel" name="phone" size="40" maxlength="4" aria-required="true"
         aria-invalid="false" placeholder="+375 (__) ___ __ __" required>
-      <div class="input_label">
-        <label><span>Время</span><input placeholder="00:00" type="time"></label>
-        <label>
-          <span>Дата</span>
-          <input type="text" id="datepicker">
-          <input class="mobile-date" type="text">
-        </label>
-      </div>
+      <div class="tel">Дата</div>
+      <input type="text" value="" id="pickadate" class="pickadate" />
+      <div class="tel">Время</div>
+      <input type="text" value="" id="pickatime" class="pickatime" />
       <div class="button-body">
-        <button ">Заказать звонок</button>
+        <button>Заказать звонок</button>
       </div>
     </form>
   </div>
