@@ -45,7 +45,7 @@
   .menu-toggle {
     display: none;
     top: 24px;
-    z-index: 2;
+    z-index: 999999;
     right: 12px;
     width: 22px;
     height: 4px; // If you have *{box-sizing:border-box} applied, you'll want to change this to 20px
